@@ -35,11 +35,11 @@ public class invalidInputTest {
 				System.out.println("What do you want to know about " + people[3]);
 			} else {
 				System.out.println("How about we try this again");	
-				continue;
-				//choice = input.nextInt();	
-				 }			
+				continue;}			
 		} while (choice > 20);		
 		System.out.println("Home Town or Favorite Food? ");
 		option = input.nextLine();
+		
+		
 	}
 }
