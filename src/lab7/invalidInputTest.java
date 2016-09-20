@@ -12,34 +12,60 @@ public class invalidInputTest {
 
 		// Array for people and food
 		String[] people = { "David", "Dante", "Damien", "Martin" };
-		String[] food = { "Chesse burger", "Steak", "Spagetti", "Pot Roast" };
+		String[] food = { "Chesse Burger's", "Steak", "Spagetti", "Pot Roast" };
 
 		// Common town
-		String hometown = "Detroit, MI";
+		String city = "Detroit, MI";
 		int choice = 0;
 		String option;
 
-		do {
-			System.out.println("Please enter a number between 1-20: ");
-			choice = input.nextInt();
-			{
-				//System.out.println("Invalid entry: Try Again");
-			}
-			if (choice <= 5) {
-				System.out.println("What do you want to know about " + people[0]);
-			} else if (choice <= 10) {
-				System.out.println("What do you want to know about " + people[1]);
-			} else if (choice <= 15) {
-				System.out.println("What do you want to know about " + people[2]);
-			} else if (choice <= 20) {
-				System.out.println("What do you want to know about " + people[3]);
-			} else {
-				System.out.println("How about we try this again");	
-				continue;}			
-		} while (choice > 20);		
-		System.out.println("Home Town or Favorite Food? ");
+		System.out.println("Please enter a number between 1-4: ");
+		choice = input.nextInt();
+		
+		switch (choice) {
+		case 1: System.out.println("What do you want to know about " + people[0] + '?' );
+		System.out.println("Hometown or Favorite Food");
 		option = input.nextLine();
+		option = input.nextLine();
+		if (option.equalsIgnoreCase("hometown")) {
+			System.out.println(people[0] +'s' + "hometown is" + city);
+		} else if (option.equalsIgnoreCase("favorite food")) {
+			System.out.println(people[0]+'s' + " favorite food is " + food[0]);
+		} 
+		break;
 		
+		case 2: System.out.println("What do you want to know about " + people[1] + '?' );
+		System.out.println("Hometown or Favorite Food");
+		option = input.nextLine();
+		option = input.nextLine();
+		if (option.equalsIgnoreCase("hometown")) {
+			System.out.println(people[1] +'s' + "hometown is" + city);
+		} else if (option.equalsIgnoreCase("favorite food")) {
+			System.out.println(people[1]+'s' + " favorite food is " + food[1]);
+		} 
+		break;
 		
+		case 3: System.out.println("What do you want to know about " + people[2] + '?' );
+		System.out.println("Hometown or Favorite Food");
+		option = input.nextLine();
+		option = input.nextLine();
+		if (option.equalsIgnoreCase("hometown")) {
+			System.out.println(people[2] +'s' + "hometown is" + city);
+		} else if (option.equalsIgnoreCase("favorite food")) {
+			System.out.println(people[2]+'s' + " favorite food is " + food[2]);
+		} 
+		break;
+		
+		case 4: System.out.println("What do you want to know about " + people[3] + '?' );
+		System.out.println("Hometown or Favorite Food");
+		option = input.nextLine();
+		option = input.nextLine();
+		if (option.equalsIgnoreCase("hometown")) {
+			System.out.println(people[3] +'s' + "hometown is" + city);
+		} else if (option.equalsIgnoreCase("favorite food")) {
+			System.out.println(people[3]+'s' + " favorite food is " + food[3]);
+		}
+		
+		} 
 	}
 }
