@@ -14,16 +14,21 @@ public class invalidInputTest {
 		String[] people = { "David", "Dante", "Damien", "Martin" };
 		String[] food = { "Chesse Burger's", "Steak", "Spagetti", "Pot Roast" };
 
-		// Common town
+		// Common town and 
 		String city = "Detroit, MI";
+		
+		//declaring variables
 		int choice = 0;
 		String option;
 		String cont = "y";
 
+		//do while loop for continuation
 		do{
+			
 		System.out.println("Please enter a number between 1-4: ");
 		choice = input.nextInt();
 		input.nextLine();
+		
 		
 		switch (choice) {
 		case 1:
@@ -69,6 +74,7 @@ public class invalidInputTest {
 			System.out.println(people[3]+'s' + " favorite food is " + food[3]);
 		}
 		}
+		// Continue option
 		System.out.println("Would you like to continue? (Y/N)");
 		cont = input.nextLine();
 		} 
