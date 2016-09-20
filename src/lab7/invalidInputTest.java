@@ -73,6 +73,6 @@ public class invalidInputTest {
 		cont = input.nextLine();
 		} 
 		while (cont.equalsIgnoreCase("y"));
-		
+		System.out.println("Goodbye Nosey! ");
 	}
 }
